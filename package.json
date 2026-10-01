@@ -1,0 +1,14 @@
+{
+  "name": "johnmorrisdotca-profile",
+  "private": true,
+  "type": "module",
+  "description": "Builds the pictures on github.com/johnmorrisdotca",
+  "scripts": {
+    "cards": "node scripts/make-cards.mjs",
+    "banner": "node scripts/make-banner.mjs",
+    "readme": "node scripts/make-readme.mjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.63.0"
+  }
+}
