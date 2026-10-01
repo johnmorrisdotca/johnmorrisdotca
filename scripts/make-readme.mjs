@@ -12,7 +12,7 @@ const repoOf = (p) => `${gh}/${p.slug}`;
 
 // Pictures are inline, not in a table: GitHub draws table borders and stripes, and a
 // fixed width lets three sit in a row on a desk and one on a phone.
-const SIZE = 272;
+const SIZE = 268;
 const picture = (p) =>
   `<a href="${urlOf(p)}"><img src="cards/${p.slug}.jpg" width="${SIZE}" alt="${p.name} ${p.jp}: ${p.line} Open the demo."></a>`;
 
@@ -23,7 +23,7 @@ const section = (title) => {
   return `## ${title}
 
 <p align="center">
-${list.map(picture).join("\n")}
+${list.map(picture).join("\n&ensp;")}
 </p>
 
 <p align="center"><sub>Code: ${code}</sub></p>
@@ -42,7 +42,7 @@ Click a picture to play its demo. Each package installs from npm as \`@johnmorri
 ${groups.map(section).join("\n")}
 ## Under the hood
 
-Rules are pure: every move makes a new state and changes nothing it was given, so a game can be saved as text, replayed, and checked on a server. Deals are seeded: the same seed gives the same game in every browser. Every demo switches between English and 日本語, and all of it is MIT licensed.
+Rules are pure: every move makes a new state and changes nothing it was given, so a game can be saved as text, replayed, and checked on a server. Deals are seeded: the same seed gives the same game in every browser. All of it is MIT licensed.
 
 Also here: [SumiLabu](${gh}/sumilabu), MicroPython firmware and a telemetry dashboard for e-ink clocks.
 
