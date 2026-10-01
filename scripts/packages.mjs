@@ -35,7 +35,7 @@ async function marbles(page) {
 
 export const PACKAGES = [
   {
-    slug: "itsutsu", name: "itsutsu.com", jp: "五つ", url: "https://itsutsu.com/",
+    slug: "itsutsu", group: "The site", line: "Board games, puzzles and cards at your own pace. By invitation.", name: "itsutsu.com", jp: "五つ", url: "https://itsutsu.com/",
     surface: {
       width: 560, height: 1000, opaque: true,
       // the first two families on the home page
@@ -46,10 +46,10 @@ export const PACKAGES = [
       },
     },
   },
-  { slug: "toranpu", name: "Toranpu", jp: "トランプ", surface: { width: 620, selector: ".table", css: "#seats, #piles, .moves { display: none !important; }" } },
-  { slug: "hitotsu", name: "Hitotsu", jp: "一つ", surface: { width: 620, selector: "#table" } },
+  { slug: "toranpu", group: "Games", line: "Ten card games with computer players.", name: "Toranpu", jp: "トランプ", surface: { width: 620, selector: ".table", css: "#seats, #piles, .moves { display: none !important; }" } },
+  { slug: "hitotsu", group: "Games", line: "The colour-card shedding game, for two to eight.", name: "Hitotsu", jp: "一つ", surface: { width: 620, selector: "#table" } },
   {
-    slug: "narabe", name: "Narabe", jp: "並べ",
+    slug: "narabe", group: "Games", line: "One rules engine for forty-eight board games.", name: "Narabe", jp: "並べ",
     surface: {
       selector: "#board svg",
       async prep(page) {
@@ -60,11 +60,11 @@ export const PACKAGES = [
       },
     },
   },
-  { slug: "sugoroku", name: "Sugoroku", jp: "双六", surface: { selector: ".sgp-board" } },
-  { slug: "domino", name: "Domino", jp: "ドミノ", surface: { width: 620, selector: ".table", css: ".train:nth-child(2), .train:nth-child(3), .train:nth-child(4), .table-top, .news, .moves { display: none !important; }" } },
-  { slug: "jarajara", name: "Jarajara", jp: "ジャラジャラ", surface: { selector: "#game" } },
+  { slug: "sugoroku", group: "Games", line: "Backgammon and its relatives, with the doubling cube.", name: "Sugoroku", jp: "双六", surface: { selector: ".sgp-board" } },
+  { slug: "domino", group: "Games", line: "Dominoes, and Mexican Train for two to eight.", name: "Domino", jp: "ドミノ", surface: { width: 620, selector: ".table", css: ".train:nth-child(2), .train:nth-child(3), .train:nth-child(4), .table-top, .news, .moves { display: none !important; }" } },
+  { slug: "jarajara", group: "Games", line: "Mahjong tiles, and the matching solitaire Awase.", name: "Jarajara", jp: "ジャラジャラ", surface: { selector: "#game" } },
   {
-    slug: "tsunagi", name: "Tsunagi", jp: "繋ぎ",
+    slug: "tsunagi", group: "Puzzles", line: "Join the pairs with lines. Every level has one answer.", name: "Tsunagi", jp: "繋ぎ",
     surface: {
       selector: ".tsp-box",
       async prep(page) {
@@ -77,10 +77,10 @@ export const PACKAGES = [
       },
     },
   },
-  { slug: "suido", name: "Suido", jp: "水道", surface: { selector: "#board svg" } },
-  { slug: "kazu", name: "Kazu", jp: "数", surface: { selector: ".kzp-box" } },
+  { slug: "suido", group: "Puzzles", line: "Turn the pipes until the water reaches every drain.", name: "Suido", jp: "水道", surface: { selector: "#board svg" } },
+  { slug: "kazu", group: "Puzzles", line: "Sudoku and five more number puzzles.", name: "Kazu", jp: "数", surface: { selector: ".kzp-box" } },
   {
-    slug: "meikyuu", name: "Meikyuu", jp: "迷宮",
+    slug: "meikyuu", group: "Puzzles", line: "A thousand mazes in every shape.", name: "Meikyuu", jp: "迷宮",
     surface: {
       selector: ".mk-box",
       async prep(page) {
@@ -90,9 +90,9 @@ export const PACKAGES = [
       },
     },
   },
-  { slug: "kyuubu", name: "Kyuubu", jp: "キューブ", surface: { selector: "#stage" } },
+  { slug: "kyuubu", group: "Puzzles", line: "A turning cube from 2×2 to 7×7.", name: "Kyuubu", jp: "キューブ", surface: { selector: "#stage" } },
   {
-    slug: "kotoba", name: "Kotoba", jp: "言葉",
+    slug: "kotoba", group: "Words and Japanese", line: "Word lists in English, French, German and Japanese.", name: "Kotoba", jp: "言葉",
     surface: {
       width: 560,
       // just the grid of guesses, a little loose
@@ -110,7 +110,7 @@ export const PACKAGES = [
     },
   },
   {
-    slug: "kumimoji", name: "Kumimoji", jp: "組み文字",
+    slug: "kumimoji", group: "Words and Japanese", line: "The crossword tile race, in English and Japanese kana.", name: "Kumimoji", jp: "組み文字",
     surface: {
       width: 620, selector: "#table", css: ".km-status, .km-notes, .km-keep, details { display: none !important; }",
       async prep(page) {
@@ -126,7 +126,7 @@ export const PACKAGES = [
       },
     },
   },
-  { slug: "tenka", name: "Tenka", jp: "天下", surface: { selector: ".tk-board" } },
-  { slug: "korokoro", name: "Korokoro", jp: "コロコロ", surface: { width: 620, selector: ".kk-felt", css: ".kk-mute, .kk-felt::before, .kk-felt::after, .kk-tray::before, .kk-tray::after { display: none !important; }" } },
-  { slug: "tane", name: "Tane", jp: "種", surface: { width: 620, selector: ".seed-box" } },
+  { slug: "tenka", group: "Maps, dice and seeds", line: "World conquest on a map of the real world.", name: "Tenka", jp: "天下", surface: { selector: ".tk-board" } },
+  { slug: "korokoro", group: "Maps, dice and seeds", line: "Dice, with the exact odds of every throw.", name: "Korokoro", jp: "コロコロ", surface: { width: 620, selector: ".kk-felt", css: ".kk-mute, .kk-felt::before, .kk-felt::after, .kk-tray::before, .kk-tray::after { display: none !important; }" } },
+  { slug: "tane", group: "Maps, dice and seeds", line: "Seeded random numbers: the same on every device.", name: "Tane", jp: "種", surface: { width: 620, selector: ".seed-box" } },
 ];

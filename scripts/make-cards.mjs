@@ -14,7 +14,7 @@ const out = join(root, "cards");
 mkdirSync(out, { recursive: true });
 mkdirSync(join(root, ".cache"), { recursive: true });
 
-const CARD = { w: 600, h: 360 }; // CSS px; the file is twice that
+const CARD = { w: 600, h: 440 }; // CSS px; the file is twice that
 
 // What the demo's own felt is called, so the card can lay its own felt behind the surface.
 const BARE = `
@@ -66,11 +66,13 @@ function cardHtml(pkg, b64) {
   header { position: absolute; left: 30px; top: 22px; right: 30px; display: flex; align-items: baseline; gap: 14px; }
   h1 { font-size: 40px; font-weight: 600; letter-spacing: -0.5px; line-height: 1; }
   .jp { font-family: "Zen Old Mincho", serif; font-size: 26px; font-weight: 700; opacity: .72; }
-  .stage { position: absolute; left: 30px; right: 30px; top: 84px; bottom: 26px; display: flex; align-items: center; justify-content: center; }
+  .stage { position: absolute; left: 30px; right: 30px; top: 80px; bottom: 104px; display: flex; align-items: center; justify-content: center; }
   .stage img { width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 6px 14px rgba(0,0,0,.35)); }
+  .line { position: absolute; left: 30px; right: 30px; bottom: 26px; font-size: 25px; line-height: 1.3; font-weight: 400; color: ${t.ivory}; opacity: .85; }
   .stage img.opaque { width: auto; height: auto; max-width: 100%; max-height: 100%; border-radius: 14px; }
 </style></head><body>
 <header><h1>${pkg.name}</h1><span class="jp">${pkg.jp}</span></header>
+<p class="line">${pkg.line}</p>
 <div class="stage"><img id="s" ${pkg.surface.opaque ? 'class="opaque"' : ""} src="data:image/png;base64,${b64}"></div>
 <script>
 // cut the surface down to what is drawn, so the card is not mostly the demo's empty felt
