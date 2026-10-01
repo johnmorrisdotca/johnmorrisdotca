@@ -19,7 +19,7 @@ const picture = (p) =>
 const groups = [...new Set(PACKAGES.map((p) => p.group))];
 const section = (title) => {
   const list = PACKAGES.filter((p) => p.group === title);
-  const code = list.map((p) => `[${p.name === "itsutsu.com" ? "its code" : p.name}](${repoOf(p)})`).join(" · ");
+  const code = list.map((p) => `<a href="${repoOf(p)}">${p.name === "itsutsu.com" ? "its code" : p.name}</a>`).join(" · ");
   return `## ${title}
 
 <p align="center">

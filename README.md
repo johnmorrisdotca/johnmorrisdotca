@@ -13,7 +13,7 @@ Click a picture to play its demo. Each package installs from npm as `@johnmorris
 <a href="https://itsutsu.com/"><img src="cards/itsutsu.jpg" width="272" alt="itsutsu.com 五つ: Board games, puzzles and cards at your own pace. By invitation. Open the demo."></a>
 </p>
 
-<p align="center"><sub>Code: [its code](https://github.com/johnmorrisdotca/itsutsu)</sub></p>
+<p align="center"><sub>Code: <a href="https://github.com/johnmorrisdotca/itsutsu">its code</a></sub></p>
 
 ## Games
 
@@ -26,7 +26,7 @@ Click a picture to play its demo. Each package installs from npm as `@johnmorris
 <a href="https://johnmorrisdotca.github.io/jarajara/"><img src="cards/jarajara.jpg" width="272" alt="Jarajara ジャラジャラ: Mahjong tiles, and the matching solitaire Awase. Open the demo."></a>
 </p>
 
-<p align="center"><sub>Code: [Toranpu](https://github.com/johnmorrisdotca/toranpu) · [Hitotsu](https://github.com/johnmorrisdotca/hitotsu) · [Narabe](https://github.com/johnmorrisdotca/narabe) · [Sugoroku](https://github.com/johnmorrisdotca/sugoroku) · [Domino](https://github.com/johnmorrisdotca/domino) · [Jarajara](https://github.com/johnmorrisdotca/jarajara)</sub></p>
+<p align="center"><sub>Code: <a href="https://github.com/johnmorrisdotca/toranpu">Toranpu</a> · <a href="https://github.com/johnmorrisdotca/hitotsu">Hitotsu</a> · <a href="https://github.com/johnmorrisdotca/narabe">Narabe</a> · <a href="https://github.com/johnmorrisdotca/sugoroku">Sugoroku</a> · <a href="https://github.com/johnmorrisdotca/domino">Domino</a> · <a href="https://github.com/johnmorrisdotca/jarajara">Jarajara</a></sub></p>
 
 ## Puzzles
 
@@ -38,7 +38,7 @@ Click a picture to play its demo. Each package installs from npm as `@johnmorris
 <a href="https://johnmorrisdotca.github.io/kyuubu/"><img src="cards/kyuubu.jpg" width="272" alt="Kyuubu キューブ: A turning cube from 2×2 to 7×7. Open the demo."></a>
 </p>
 
-<p align="center"><sub>Code: [Tsunagi](https://github.com/johnmorrisdotca/tsunagi) · [Suido](https://github.com/johnmorrisdotca/suido) · [Kazu](https://github.com/johnmorrisdotca/kazu) · [Meikyuu](https://github.com/johnmorrisdotca/meikyuu) · [Kyuubu](https://github.com/johnmorrisdotca/kyuubu)</sub></p>
+<p align="center"><sub>Code: <a href="https://github.com/johnmorrisdotca/tsunagi">Tsunagi</a> · <a href="https://github.com/johnmorrisdotca/suido">Suido</a> · <a href="https://github.com/johnmorrisdotca/kazu">Kazu</a> · <a href="https://github.com/johnmorrisdotca/meikyuu">Meikyuu</a> · <a href="https://github.com/johnmorrisdotca/kyuubu">Kyuubu</a></sub></p>
 
 ## Words and Japanese
 
@@ -47,7 +47,7 @@ Click a picture to play its demo. Each package installs from npm as `@johnmorris
 <a href="https://johnmorrisdotca.github.io/kumimoji/"><img src="cards/kumimoji.jpg" width="272" alt="Kumimoji 組み文字: The crossword tile race, in English and Japanese kana. Open the demo."></a>
 </p>
 
-<p align="center"><sub>Code: [Kotoba](https://github.com/johnmorrisdotca/kotoba) · [Kumimoji](https://github.com/johnmorrisdotca/kumimoji)</sub></p>
+<p align="center"><sub>Code: <a href="https://github.com/johnmorrisdotca/kotoba">Kotoba</a> · <a href="https://github.com/johnmorrisdotca/kumimoji">Kumimoji</a></sub></p>
 
 ## Maps, dice and seeds
 
@@ -57,7 +57,7 @@ Click a picture to play its demo. Each package installs from npm as `@johnmorris
 <a href="https://johnmorrisdotca.github.io/tane/"><img src="cards/tane.jpg" width="272" alt="Tane 種: Seeded random numbers: the same on every device. Open the demo."></a>
 </p>
 
-<p align="center"><sub>Code: [Tenka](https://github.com/johnmorrisdotca/tenka) · [Korokoro](https://github.com/johnmorrisdotca/korokoro) · [Tane](https://github.com/johnmorrisdotca/tane)</sub></p>
+<p align="center"><sub>Code: <a href="https://github.com/johnmorrisdotca/tenka">Tenka</a> · <a href="https://github.com/johnmorrisdotca/korokoro">Korokoro</a> · <a href="https://github.com/johnmorrisdotca/tane">Tane</a></sub></p>
 
 ## Under the hood
 
